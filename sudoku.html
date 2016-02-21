@@ -1,0 +1,116 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="sudoku.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="sudoku.js"></script>
+  </head>
+
+  <body>
+    <h2>Sudoku Solver</h2>
+    <div id="thing"></div>
+    <form class="grid">
+      <input class="sudoku-square darker" maxlength="1" name="0">
+      <input class="sudoku-square darker" maxlength="1" name="1">
+      <input class="sudoku-square darker" maxlength="1" name="2">
+      <input class="sudoku-square" maxlength="1" name="3">
+      <input class="sudoku-square" maxlength="1" name="4">
+      <input class="sudoku-square" maxlength="1" name="5">
+      <input class="sudoku-square darker" maxlength="1" name="6">
+      <input class="sudoku-square darker" maxlength="1" name="7">
+      <input class="sudoku-square darker" maxlength="1" name="8">
+      <div></div>
+      <input class="sudoku-square darker" maxlength="1" name="9">
+      <input class="sudoku-square darker" maxlength="1" name="10">
+      <input class="sudoku-square darker" maxlength="1" name="11">
+      <input class="sudoku-square" maxlength="1" name="12">
+      <input class="sudoku-square" maxlength="1" name="13">
+      <input class="sudoku-square" maxlength="1" name="14">
+      <input class="sudoku-square darker" maxlength="1" name="15">
+      <input class="sudoku-square darker" maxlength="1" name="16">
+      <input class="sudoku-square darker" maxlength="1" name="17">
+      <div></div>
+      <input class="sudoku-square darker" maxlength="1" name="18">
+      <input class="sudoku-square darker" maxlength="1" name="19">
+      <input class="sudoku-square darker" maxlength="1" name="20">
+      <input class="sudoku-square" maxlength="1" name="21">
+      <input class="sudoku-square" maxlength="1" name="22">
+      <input class="sudoku-square" maxlength="1" name="23">
+      <input class="sudoku-square darker" maxlength="1" name="24">
+      <input class="sudoku-square darker" maxlength="1" name="25">
+      <input class="sudoku-square darker" maxlength="1" name="26">
+      <div></div>
+      <input class="sudoku-square" maxlength="1" name="27">
+      <input class="sudoku-square" maxlength="1" name="28">
+      <input class="sudoku-square" maxlength="1" name="29">
+      <input class="sudoku-square darker" maxlength="1" name="30">
+      <input class="sudoku-square darker" maxlength="1" name="31">
+      <input class="sudoku-square darker" maxlength="1" name="32">
+      <input class="sudoku-square" maxlength="1" name="33">
+      <input class="sudoku-square" maxlength="1" name="34">
+      <input class="sudoku-square" maxlength="1" name="35">
+      <div></div>
+      <input class="sudoku-square" maxlength="1" name="36">
+      <input class="sudoku-square" maxlength="1" name="37">
+      <input class="sudoku-square" maxlength="1" name="38">
+      <input class="sudoku-square darker" maxlength="1" name="39">
+      <input class="sudoku-square darker" maxlength="1" name="40">
+      <input class="sudoku-square darker" maxlength="1" name="41">
+      <input class="sudoku-square" maxlength="1" name="42">
+      <input class="sudoku-square" maxlength="1" name="43">
+      <input class="sudoku-square" maxlength="1" name="44">
+      <div></div>
+      <input class="sudoku-square" maxlength="1" name="45">
+      <input class="sudoku-square" maxlength="1" name="46">
+      <input class="sudoku-square" maxlength="1" name="47">
+      <input class="sudoku-square darker" maxlength="1" name="48">
+      <input class="sudoku-square darker" maxlength="1" name="49">
+      <input class="sudoku-square darker" maxlength="1" name="50">
+      <input class="sudoku-square" maxlength="1" name="51">
+      <input class="sudoku-square" maxlength="1" name="52">
+      <input class="sudoku-square" maxlength="1" name="53">
+      <div></div>
+      <input class="sudoku-square darker" maxlength="1" name="54">
+      <input class="sudoku-square darker" maxlength="1" name="55">
+      <input class="sudoku-square darker" maxlength="1" name="56">
+      <input class="sudoku-square" maxlength="1" name="57">
+      <input class="sudoku-square" maxlength="1" name="58">
+      <input class="sudoku-square" maxlength="1" name="59">
+      <input class="sudoku-square darker" maxlength="1" name="60">
+      <input class="sudoku-square darker" maxlength="1" name="61">
+      <input class="sudoku-square darker" maxlength="1" name="62">
+      <div></div>
+      <input class="sudoku-square darker" maxlength="1" name="63">
+      <input class="sudoku-square darker" maxlength="1" name="64">
+      <input class="sudoku-square darker" maxlength="1" name="65">
+      <input class="sudoku-square" maxlength="1" name="66">
+      <input class="sudoku-square" maxlength="1" name="67">
+      <input class="sudoku-square" maxlength="1" name="68">
+      <input class="sudoku-square darker" maxlength="1" name="69">
+      <input class="sudoku-square darker" maxlength="1" name="70">
+      <input class="sudoku-square darker" maxlength="1" name="71">
+      <div></div>
+      <input class="sudoku-square darker" maxlength="1" name="72">
+      <input class="sudoku-square darker" maxlength="1" name="73">
+      <input class="sudoku-square darker" maxlength="1" name="74">
+      <input class="sudoku-square" maxlength="1" name="75">
+      <input class="sudoku-square" maxlength="1" name="76">
+      <input class="sudoku-square" maxlength="1" name="77">
+      <input class="sudoku-square darker" maxlength="1" name="78">
+      <input class="sudoku-square darker" maxlength="1" name="79">
+      <input class="sudoku-square darker" maxlength="1" name="80">
+      <div></div>
+      <input id="solve" type="submit" value="Solve!">
+    </form>
+    <button id="clear">Clear!</button>
+
+    <p id="message">This puzzle cannot be solved!</p>
+  </body>
+</html>
